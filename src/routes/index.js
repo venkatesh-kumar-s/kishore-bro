@@ -1,10 +1,12 @@
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Group from "../pages/Group";
-import Publications from "../pages/Publications";
-import Patents from "../pages/Patents";
-import Achievements from "../pages/Achievements";
-import FallBack from "../components/FallBack";
+import React from "react";
+
+const Home = React.lazy(() => import("../pages/Home"));
+const About = React.lazy(() => import("../pages/About"));
+const Group = React.lazy(() => import("../pages/Group"));
+const Publications = React.lazy(() => import("../pages/Publications"));
+const Patents = React.lazy(() => import("../pages/Patents"));
+const Achievements = React.lazy(() => import("../pages/Achievements"));
+const FallBack = React.lazy(() => import("../components/FallBack"));
 
 export const AppRoutes = [
   {
