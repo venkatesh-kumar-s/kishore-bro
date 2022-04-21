@@ -4,7 +4,7 @@ import banner from "../assets/images/banner.jpg";
 const Banner = () => {
   return (
     <div style={{ position: "relative" }}>
-      <div
+      {/* <div
         style={{
           background: "#11111150",
           position: "absolute",
@@ -12,7 +12,7 @@ const Banner = () => {
           height: "100%",
           zIndex: 100,
         }}
-      ></div>
+      ></div> */}
       <img src={banner} alt="IIT" className="img-fluid shadow" />
     </div>
   );
