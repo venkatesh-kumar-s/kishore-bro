@@ -4,6 +4,7 @@ import Group from "../pages/Group";
 import Publications from "../pages/Publications";
 import Patents from "../pages/Patents";
 import Achievements from "../pages/Achievements";
+import FallBack from "../components/FallBack";
 
 export const AppRoutes = [
   {
@@ -33,10 +34,6 @@ export const AppRoutes = [
 
   {
     path: "*",
-    component: (
-      <div>
-        <p>Falling Back...</p>
-      </div>
-    ),
+    component: <FallBack />,
   },
 ];

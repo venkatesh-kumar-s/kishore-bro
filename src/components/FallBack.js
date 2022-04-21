@@ -1,0 +1,47 @@
+import { Avatar, Button } from "@mui/material";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import bond from "../assets/images/bond.ico";
+
+const FallBack = () => {
+  const navigate = useNavigate();
+  return (
+    <div
+      className="d-flex justify-content-center align-items-center w-100"
+      style={{
+        position: "absolute",
+        top: "50%",
+        transform: "translateY(-50%)",
+      }}
+    >
+      <div className="row">
+        <div className="col d-flex">
+          <Avatar
+            variant="square"
+            src={bond}
+            alt="404"
+            sx={{ height: 100, width: 100 }}
+          />
+          <p className="display-1">
+            <b>404</b> <span className="text-muted">I</span>
+          </p>
+        </div>
+        <div className="col-auto my-auto">
+          <p className="my-auto" style={{ fontSize: "large" }}>
+            The content you're trying to access doesn't exists!
+            <Button
+              variant="contained"
+              size="small"
+              className="col-4 my-2"
+              onClick={() => navigate("/")}
+            >
+              Go To Home
+            </Button>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FallBack;

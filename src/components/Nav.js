@@ -10,7 +10,7 @@ const Nav = () => {
 
   return (
     <Navbar
-      bg="dark"
+      // bg="dark"
       expand="lg"
       expanded={state}
       variant="dark"

@@ -9,11 +9,11 @@ const Banner = () => {
           background: "#11111150",
           position: "absolute",
           width: "100%",
-          height: 400,
+          height: "100%",
           zIndex: 100,
         }}
       ></div>
-      <img src={banner} alt="IIT" className="img-fluid" />
+      <img src={banner} alt="IIT" className="img-fluid shadow" />
     </div>
   );
 };
