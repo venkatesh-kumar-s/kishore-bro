@@ -20,7 +20,7 @@ const Patents = () => {
     setState(temp);
   }, [search]);
   return (
-    <div className="mt-5">
+    <div className="my-5">
       <Container>
         <TopBar
           placeholder="Search Patents Here..."
@@ -31,7 +31,7 @@ const Patents = () => {
           {state?.map((r, i) => (
             <Card
               key={i}
-              className="col-md-3 col-sm-12 p-0 me-md-4 shadow-sm"
+              className="col-md-3 col-sm-12 p-0 me-md-4 shadow-sm my-3"
               style={{ background: tone[i] }}
             >
               <Card.Body>
