@@ -33,6 +33,12 @@ const PageLayout = ({ title, data }) => {
   return (
     <div className="mt-5 pb-5">
       <Container fluid>
+        <p
+          className="display-5 text-center text-primary mb-sm-5"
+          style={{ fontWeight: 400 }}
+        >
+          {title}
+        </p>
         <TopBar
           placeholder={`Search ${title} Here...`}
           state={state}

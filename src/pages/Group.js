@@ -8,7 +8,7 @@ const Group = () => {
     <div className="mt-5 pb-5">
       <Container>
         <p
-          className="display-4 text-center text-primary mb-sm-5"
+          className="display-5 text-center text-primary mb-sm-5"
           style={{ fontWeight: 400 }}
         >
           Group

@@ -9,7 +9,7 @@ const Achievements = () => {
     <div className="mt-5 mt-md-4 pb-5">
       <Container>
         <p
-          className="display-3 text-success text-center mb-5"
+          className="display-5 text-success text-center mb-5"
           style={{ fontWeight: 400 }}
         >
           Awards
