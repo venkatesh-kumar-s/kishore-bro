@@ -93,7 +93,8 @@ const PageLayout = ({ title, data }) => {
                 )}
               </Card.Body>
               {title === "Patents" ? (
-                <Card.Footer className="bg-white text-success">
+                <Card.Footer className="bg-white text-success d-flex justify-content-between">
+                  <p className="my-auto">Patent Reference : </p>
                   {r.application_no}
                 </Card.Footer>
               ) : (
