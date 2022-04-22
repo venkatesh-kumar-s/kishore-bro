@@ -11,6 +11,7 @@ const Social = () => {
       {SocialNetworks?.map((r, i) => (
         <Tooltip key={i} title={r?.alt}>
           <a
+            className="mx-2 mx-md-1"
             href={
               r?.email
                 ? "mailto:kishore.natte@chy.iith.ac.in"
