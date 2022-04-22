@@ -27,6 +27,11 @@ const PageLayout = ({ title, data }) => {
     setState(temp);
   }, [search]);
 
+  const getColors = (i) => {
+    let color = "hsl(" + Math.random() * i * 360 + ", 100%, 95%)";
+    return color;
+  };
+
   return (
     <div className="mt-5 pb-5">
       <Container fluid>
@@ -40,11 +45,9 @@ const PageLayout = ({ title, data }) => {
           {state?.map((r, i) => (
             <Card
               key={i}
-              className="col-md-3 col-sm-12 p-0 me-md-4 shadow my-3"
+              className="col-md-3 col-sm-12 p-0 me-md-4 shadow my-3 border-info"
               style={{
-                background: `#${Math.floor(
-                  Math.random() * i * 16777215
-                ).toString(16)}98`,
+                background: getColors(i),
               }}
             >
               <Card.Body className="d-flex flex-column">
@@ -95,7 +98,7 @@ const PageLayout = ({ title, data }) => {
               ) : (
                 <Card.Footer className="bg-white text-success p-0">
                   <button
-                    className="btn btn-primary w-100"
+                    className="btn btn-warning w-100"
                     onClick={() => window.open(r.url, "_blank")}
                   >
                     View Publication
