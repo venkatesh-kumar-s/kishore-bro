@@ -17,10 +17,10 @@ const Achievements = () => {
         {Awards.map((r, i) => (
           <div
             key={i}
-            className="alert alert-info d-flex justify-content-between py-2"
+            className="alert alert-info d-flex justify-content-between py-2 mx-auto"
           >
             <span>{r.desc}</span>
-            <span>{r.location + " " + r.span}</span>
+            <span>{"- " + r.location + " " + r.span}</span>
           </div>
         ))}
       </Container>
