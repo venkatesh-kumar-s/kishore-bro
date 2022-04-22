@@ -1,6 +1,14 @@
 .App {
-  background-color: #61dafb;
+  background: linear-gradient(
+    to bottom,
+    #61dafb,
+    #90e0ef,
+    #ade8f4,
+    #caf0f8,
+    white
+  );
   min-height: 100vh;
+  height: 100%;
   scroll-behavior: smooth;
 }
 
