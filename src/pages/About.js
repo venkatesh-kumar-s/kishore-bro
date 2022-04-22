@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import { useTitle } from "../components/customHooks/title";
 import Loading from "../components/Loading";
+import kishore from "../assets/images/Kishore.jpeg";
 
 const About = () => {
   const [state, setState] = useState(false);
@@ -16,11 +17,13 @@ const About = () => {
     <div className="mt-5 pb-5">
       <Container>
         <div className="row my-5">
-          <div className="col-md-6 col-sm-12 mb-5 mb-md-0">
-            <Avatar
-              src="https://milessmarttutoring.com/wp-content/uploads/2020/09/Organic-Chemistry-right.jpg"
-              alt="dp"
-              sx={{ height: "100%", width: "50%", margin: "auto" }}
+          <div className="col-md-6 col-sm-12 mb-5 mb-md-0 text-center">
+            <img
+              //src="https://milessmarttutoring.com/wp-content/uploads/2020/09/Organic-Chemistry-right.jpg"
+              src={kishore}
+              alt="bg"
+              className="shadow"
+              style={{ borderRadius: 10 }}
             />
           </div>
           <div className="col-md-6 col-sm-12">

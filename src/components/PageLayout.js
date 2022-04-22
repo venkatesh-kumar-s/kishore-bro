@@ -79,15 +79,12 @@ const PageLayout = ({ title, data }) => {
                           <td> {r.year}</td>
                         </tr>
                         <tr>
-                          <td>Concept : </td>
+                          <td>Journal : </td>
                           <td> {r.concept}</td>
                         </tr>
+
                         <tr>
-                          <td>Impact Factor : </td>
-                          <td> {r.impact_factor}</td>
-                        </tr>
-                        <tr>
-                          <td>Serial : </td>
+                          <td>Index & Page : </td>
                           <td> {r.others}</td>
                         </tr>
                       </tbody>
