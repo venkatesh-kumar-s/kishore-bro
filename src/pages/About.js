@@ -1,9 +1,24 @@
-import { Avatar } from "@mui/material";
+import { Avatar, Tooltip } from "@mui/material";
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import { useTitle } from "../components/customHooks/title";
 import Loading from "../components/Loading";
 import kishore from "../assets/images/Kishore.jpeg";
+import scholar from "../assets/images/scholar.png";
+import orcid from "../assets/images/orcid.png";
+
+const highlights = [
+  {
+    icon: scholar,
+    url: "https://scholar.google.com/citations?user=mwK5yskAAAAJ&hl=en",
+    alt: "Google Scholar",
+  },
+  {
+    icon: orcid,
+    url: "https://orcid.org/my-orcid?orcid=0000-0001-8557-1969",
+    alt: "ORCID",
+  },
+];
 
 const About = () => {
   const [state, setState] = useState(false);
@@ -28,7 +43,20 @@ const About = () => {
           </div>
           <div className="col-md-6 col-sm-12">
             <Container>
-              <h2>Dr. Kishore Natte</h2>
+              <div className="d-flex">
+                <h2 className="me-3">Dr. Kishore Natte </h2>
+                {highlights.map((r, i) => (
+                  <Tooltip key={i} title={r.alt}>
+                    <Avatar
+                      src={r.icon}
+                      alt={r.alt}
+                      onClick={() => window.open(r.url)}
+                      sx={{ cursor: "pointer", marginRight: 1 }}
+                    />
+                  </Tooltip>
+                ))}
+              </div>
+
               <br />
               <p style={{ fontWeight: 400 }}>
                 <span>Assistant Professor</span>

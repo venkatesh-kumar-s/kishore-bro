@@ -6,7 +6,7 @@ export const SocialNetworks = [
   {
     image: linkedin,
     alt: "Linked In",
-    url: "",
+    url: "https://www.linkedin.com/in/dr-kishore-natte-b2a82513/",
   },
   {
     image: gmail,
