@@ -1,9 +1,9 @@
 import React from "react";
-import { useTitle } from "../components/customHooks/title";
+import PageLayout from "../components/PageLayout";
+import { PublicationsList } from "../data";
 
 const Publications = () => {
-  useTitle("Publications");
-  return <div>Publications</div>;
+  return <PageLayout title="Publications" data={PublicationsList} />;
 };
 
 export default Publications;

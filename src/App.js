@@ -5,10 +5,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Nav from "./components/Nav";
 import { AppRoutes } from "./routes";
 import Loading from "./components/Loading";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Router>
         <Nav />
         <React.Suspense fallback={<Loading />}>
@@ -19,6 +20,7 @@ function App() {
           </Routes>
         </React.Suspense>
       </Router>
+      <ScrollToTop />
     </div>
   );
 }
