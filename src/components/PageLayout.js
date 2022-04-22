@@ -3,8 +3,6 @@ import { Card, Container } from "react-bootstrap";
 import TopBar from "./TopBar";
 import { useTitle } from "./customHooks";
 
-const tone = ["#caf0f8", "#dfe7fd", "#d8f3dc", "#edf2fb"];
-
 const PageLayout = ({ title, data }) => {
   useTitle(title);
 
@@ -28,7 +26,7 @@ const PageLayout = ({ title, data }) => {
   }, [search]);
 
   const getColors = (i) => {
-    let color = "hsl(" + Math.random() * i * 360 + ", 100%, 95%)";
+    let color = "hsl(" + Math.random() * i * 360 + ", 100%, 98%)";
     return color;
   };
 
