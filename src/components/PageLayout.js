@@ -3,12 +3,12 @@ import { Card, Container } from "react-bootstrap";
 import TopBar from "./TopBar";
 import { useTitle } from "./customHooks";
 
-const tone = [];
+const tone = ["#caf0f8", "#dfe7fd", "#d8f3dc", "#edf2fb"];
 
 const PageLayout = ({ title, data }) => {
   useTitle(title);
 
-  const [state, setState] = useState(data); //data = PatientsList
+  const [state, setState] = useState(data);
   const [search, setSearch] = useState(" ");
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const PageLayout = ({ title, data }) => {
   }, [search]);
 
   return (
-    <div className="my-5">
+    <div className="mt-5 pb-5">
       <Container fluid>
         <TopBar
           placeholder={`Search ${title} Here...`}
@@ -42,7 +42,9 @@ const PageLayout = ({ title, data }) => {
               key={i}
               className="col-md-3 col-sm-12 p-0 me-md-4 shadow my-3"
               style={{
-                background: tone[i],
+                background: `#${Math.floor(
+                  Math.random() * i * 16777215
+                ).toString(16)}98`,
               }}
             >
               <Card.Body className="d-flex flex-column">

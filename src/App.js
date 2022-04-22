@@ -6,10 +6,11 @@ import Nav from "./components/Nav";
 import { AppRoutes } from "./routes";
 import Loading from "./components/Loading";
 import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App h-100">
       <Router>
         <Nav />
         <React.Suspense fallback={<Loading />}>
@@ -21,6 +22,7 @@ function App() {
         </React.Suspense>
       </Router>
       <ScrollToTop />
+      <Footer />
     </div>
   );
 }
