@@ -14,7 +14,7 @@ const Nav = () => {
       expand="lg"
       expanded={state}
       variant="dark"
-      className="shadow bg-black"
+      className="shadow bg-black sticky-top"
     >
       <Container fluid className="row mx-sm-0 ps-3 pe-1 px-md-4">
         <Link

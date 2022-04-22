@@ -6,6 +6,7 @@ const Group = React.lazy(() => import("../pages/Group"));
 const Publications = React.lazy(() => import("../pages/Publications"));
 const Patents = React.lazy(() => import("../pages/Patents"));
 const Achievements = React.lazy(() => import("../pages/Achievements"));
+const Researches = React.lazy(() => import("../pages/Researches"));
 const FallBack = React.lazy(() => import("../components/FallBack"));
 
 export const AppRoutes = [
@@ -32,6 +33,10 @@ export const AppRoutes = [
   {
     path: "/achievements",
     component: <Achievements />,
+  },
+  {
+    path: "/researches",
+    component: <Researches />,
   },
 
   {

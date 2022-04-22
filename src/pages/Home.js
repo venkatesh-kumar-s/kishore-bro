@@ -4,25 +4,21 @@ import Banner from "../components/Banner";
 import { useTitle } from "../components/customHooks/title";
 import ResearchInterests from "../components/ResearchInterests";
 import diagram from "../assets/images/diagram.png";
+import "./pages.css";
 
 const Home = () => {
   useTitle("Home");
   return (
     <div className="pb-5">
       <Banner />
-      <div className="bg-black shadow px-md-5 py-4">
-        <h3 className="text-center text-light">
+      <div className="bg-black shadow px-0 py-3 px-md-5 py-md-4">
+        <h3 className="text-center text-light" style={{ lineHeight: "1.5" }}>
           Laboratory for Applied Organic Synthesis
         </h3>
       </div>
       <div className="my-5 text-center">
         <h2>Welcome to the KN Research Lab</h2>
-        <img
-          src={diagram}
-          alt="diagram"
-          className="img-fluid w-25 my-4 shadow"
-          style={{ borderRadius: 10 }}
-        />
+        <img src={diagram} alt="diagram" className="flowchart my-4 shadow" />
       </div>
       <div>
         <Container>
