@@ -3,6 +3,7 @@ import publications from "../assets/images/publications.ico";
 import group from "../assets/images/group.ico";
 import patent from "../assets/images/patent.ico";
 import achievement from "../assets/images/achievement.ico";
+import research from "../assets/images/research.ico";
 
 export const Menu = [
   {
@@ -24,6 +25,11 @@ export const Menu = [
     label: "Patents",
     path: "/patents",
     icon: patent,
+  },
+  {
+    label: "Researches",
+    path: "/researches",
+    icon: research,
   },
   {
     label: "Achievements",

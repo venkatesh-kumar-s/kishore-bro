@@ -1,7 +1,8 @@
+import { Avatar } from "@mui/material";
 import React from "react";
 import { Container } from "react-bootstrap";
 
-const ResearchInterests = () => {
+const ResearchInterests = ({ icon }) => {
   return (
     <div className="my-5">
       <Container>
