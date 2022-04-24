@@ -1,5 +1,22 @@
 export const PublicationsList = [
   {
+    description:
+      "Value addition of Lignin to Zingerone using recyclable AlPO4 and Ni/LRC Catalysts",
+    contributors: [
+      "S. Rawat",
+      "B. Singh",
+      "B. Raju",
+      "C. Pendem",
+      "S. Bhandari",
+      "K. Natte",
+      "* A. Narani",
+    ],
+    year: 2022,
+    others: "431, 134130",
+    concept: "Chem. Eng. J",
+    url: "https://doi.org/10.1016/j.cej.2021.134130",
+  },
+  {
     description: "Base metal‐catalyzed C‐methylation reactions using methanol",
     contributors: ["N. Sarki", "V. Goyal", "K. Natte", "* R. V. Jagadeesh"],
     year: 2021,
