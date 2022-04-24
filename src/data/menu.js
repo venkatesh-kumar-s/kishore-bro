@@ -27,7 +27,7 @@ export const Menu = [
     icon: patent,
   },
   {
-    label: "Researches",
+    label: "Research Interest",
     path: "/researches",
     icon: research,
   },

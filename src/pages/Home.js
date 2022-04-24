@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Banner from "../components/Banner";
+import Group from "./Group";
 import { useTitle } from "../components/customHooks/title";
 import ResearchInterests from "../components/ResearchInterests";
 import diagram from "../assets/images/diagram.png";
@@ -44,6 +45,7 @@ const Home = () => {
       </div>
 
       <ResearchInterests icon={diagram} />
+      <Group />
     </div>
   );
 };
