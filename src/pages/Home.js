@@ -44,7 +44,7 @@ const Home = () => {
         </Container>
       </div>
 
-      <Group />
+      <Group show={false} />
     </div>
   );
 };

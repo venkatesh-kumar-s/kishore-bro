@@ -15,4 +15,10 @@
   .members {
     height: 100%;
   }
+  .text {
+    font-size: xx-large;
+  }
+  .sub-text {
+    font-size: x-large;
+  }
 }
