@@ -4,6 +4,7 @@ import group from "../assets/images/group.ico";
 import patent from "../assets/images/patent.ico";
 import achievement from "../assets/images/achievement.ico";
 import research from "../assets/images/research.ico";
+import teachings from "../assets/images/teachings.ico";
 
 export const Menu = [
   {
@@ -27,9 +28,14 @@ export const Menu = [
     icon: patent,
   },
   {
-    label: "Research Interest",
+    label: "Research Interests",
     path: "/researches",
     icon: research,
+  },
+  {
+    label: "Teachings",
+    path: "/teachings",
+    icon: teachings,
   },
   {
     label: "Achievements",

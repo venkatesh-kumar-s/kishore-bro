@@ -15,7 +15,7 @@ const highlights = [
   },
   {
     icon: orcid,
-    url: "https://orcid.org/my-orcid?orcid=0000-0001-8557-1969",
+    url: "https://orcid.org/0000-0001-8557-1969",
     alt: "ORCID",
   },
 ];

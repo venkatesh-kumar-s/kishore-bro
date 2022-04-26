@@ -44,7 +44,6 @@ const Home = () => {
         </Container>
       </div>
 
-      <ResearchInterests icon={diagram} />
       <Group />
     </div>
   );

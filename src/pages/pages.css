@@ -4,8 +4,15 @@
   border-radius: 10px;
 }
 
+.members {
+  height: 200px;
+}
+
 @media only screen and (max-width: 768px) {
   .flowchart {
     width: 95%;
+  }
+  .members {
+    height: 100%;
   }
 }

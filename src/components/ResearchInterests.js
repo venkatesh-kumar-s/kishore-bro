@@ -17,7 +17,7 @@ const ResearchInterests = ({ icon }) => {
           principles guiding the bond breaking and formation result. To make all
           these possible, the use of catalysts is very important in chemical
           reactions, which will turn raw materials into useful products. In this
-          regard, my research program will be dedicated to the development and
+          regard, our research program will be dedicated to the development and
           application of new catalytic methods in the area of organic chemistry
           to create organic molecules (with high selectivity, yields, and
           purity) that are useful in market-oriented consumer and household
