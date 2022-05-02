@@ -33,7 +33,7 @@ export const Menu = [
     icon: research,
   },
   {
-    label: "Teachings",
+    label: "Teaching",
     path: "/teachings",
     icon: teachings,
   },

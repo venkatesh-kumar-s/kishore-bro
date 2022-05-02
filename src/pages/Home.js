@@ -34,7 +34,7 @@ const Home = () => {
             postdoctoral research and worked till December 2015 and then moved
             to RWTH Aachen University. He started his independent career as a
             Senior Scientist at CSIR Indian Institute of Petroleum, Dehradun in
-            2017. Just recently, he joined as an Assistant Professor (Grade 1)
+            2017. In March 2022, he joined as an Assistant Professor (Grade 1)
             at the Indian Institute of Technology, Hyderabad. His research
             focuses on the development of new strategies and technologies in
             chemicals and drug discovery including fuel-type molecules.

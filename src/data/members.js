@@ -14,7 +14,7 @@ export const alumni = [
 export const group = [
   {
     title: "Ms.",
-    name: "Naina Sarki",
+    name: "Vishakha Goyal",
     designation: "Senior Research Fellow",
     qualification: "Ph.D. 4th year",
     avatar:
@@ -22,7 +22,7 @@ export const group = [
   },
   {
     title: "Ms.",
-    name: "Vishakha Goyal",
+    name: "Naina Sarki",
     designation: "Senior Research Fellow",
     qualification: "Ph.D. 4th year",
     avatar:
