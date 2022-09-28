@@ -2,33 +2,41 @@ import React, { useEffect, useState } from "react";
 import { Card, Container } from "react-bootstrap";
 import TopBar from "./TopBar";
 import { useTitle } from "./customHooks";
+import Loading from "./Loading";
 
-const PageLayout = ({ title, data }) => {
+const PageLayout = ({ title, data, loading }) => {
   useTitle(title);
 
   const [state, setState] = useState(data);
   const [search, setSearch] = useState(" ");
 
   useEffect(() => {
+    setState(data);
+
     let temp =
       title === "Patents"
         ? data?.filter(
             (r) =>
               r.description.toLowerCase().search(search.toLowerCase()) !== -1 ||
-              r.application_no.toLowerCase().search(search.toLowerCase()) !== -1
+              r.patent_reference.toLowerCase().search(search.toLowerCase()) !==
+                -1
           )
         : data?.filter(
             (r) =>
               r.description.toLowerCase().search(search.toLowerCase()) !== -1 ||
-              r.others.toLowerCase().search(search.toLowerCase()) !== -1
+              r.journal.toLowerCase().search(search.toLowerCase()) !== -1
           );
     setState(temp);
-  }, [search]);
+  }, [search, data]);
 
   const getColors = (i) => {
     let color = "hsl(" + Math.random() * i * 360 + ", 100%, 98%)";
     return color;
   };
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <div className="mt-5 pb-5">
@@ -48,7 +56,7 @@ const PageLayout = ({ title, data }) => {
         <div className="row mx-auto justify-content-center">
           {state?.map((r, i) => (
             <Card
-              key={i}
+              key={r.id}
               className="col-md-3 col-sm-12 p-0 me-md-4 shadow my-3 border-info"
               style={{
                 background: getColors(i),
@@ -80,12 +88,12 @@ const PageLayout = ({ title, data }) => {
                         </tr>
                         <tr>
                           <td>Journal : </td>
-                          <td> {r.concept}</td>
+                          <td> {r.journal}</td>
                         </tr>
 
                         <tr>
                           <td>Index & Page : </td>
-                          <td> {r.others}</td>
+                          <td> {r.indexes}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -95,7 +103,7 @@ const PageLayout = ({ title, data }) => {
               {title === "Patents" ? (
                 <Card.Footer className="bg-white text-success d-flex justify-content-between">
                   <p className="my-auto">Patent Reference : </p>
-                  {r.application_no}
+                  {r.patent_reference}
                 </Card.Footer>
               ) : (
                 <Card.Footer className="bg-white text-success p-0">
